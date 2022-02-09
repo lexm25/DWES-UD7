@@ -30,7 +30,7 @@ if (isset($_POST["enviar"])) {
 	// Establecemos los parámetros de envío
 	if (!empty($_POST['num1'])) {
 		// Si los parámetros son correctos, llamamos a la función letra de calcularLetra.php
-		$resultado =  $cliente->AddInteger($params)->AddIntegerResult;
+		$resultado =  $cliente->DivideInteger($params)->DivideIntegerResult;
 	} else {
 		$error = "<p style='color:red'><strong>Error:</strong> Debes introducir un número</p>";
 	}
@@ -40,13 +40,13 @@ if (isset($_POST["enviar"])) {
 <html>
 
 <head>
-	<title>CALCULADURA DE SUMA</title>
+	<title>CALCULADURA DE DIVISIÓN</title>
 	<link rel="stylesheet" type="text/css" href="/estilo.css">
 </head>
 
 <body>
 	<h3>Intoruduce los números</h3>
-	<form action="ejercicio5.php" method="post">
+	<form action="DivideInteger.php" method="post">
 		<?php
 		print "<input type='number' name='num1'>";
 		print "<input type='number' name='num2'>";
